@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital@0;1&family=Raleway:ital,wght@0,700;1,700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.25%;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 8rem;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar ul li {
+  font-size: 1.8rem;
+  font-family: "Open Sans";
+}
+.navbar ul li a {
+  cursor: pointer;
+}
+.navbar ul li a:hover {
+  color: rgb(255, 196, 0);
+}
+
+#section {
+  background-color: #000;
+  width: 100%;
+  height: 64rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+#section .container .left {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#section .container .left p, #section .container .left h2 {
+  color: white;
+}
+#section .container .left h2 {
+  font-size: 4.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+#section .container .left p {
+  font-size: 1.8rem;
+  font-family: "Open Sans";
+}
+#section .container .left p a {
+  cursor: pointer;
+  color: #8a5cd9;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#section .container .left p a:hover {
+  color: #9f7ade;
+}
+#section .container .left button {
+  background-color: #000;
+  border: 2px solid white;
+  border-radius: 5rem;
+  color: white;
+  padding: 2rem;
+  width: 18.7rem;
+  height: 4.8rem;
+  padding: 1rem 2rem;
+  font-family: "Raleway";
+  font-weight: bolder;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+#section .container .left button:hover {
+  border: 1px solid black;
+}
+#section .container .right {
+  position: relative;
+  width: 40rem;
+  height: 50rem;
+}
+#section .container .right img {
+  width: 33.5rem;
+  height: 42rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  z-index: 1;
+}
+#section .container .right .violet, #section .container .right .orange {
+  width: 15.9rem;
+  height: 15.9rem;
+}
+#section .container .right .violet {
+  border: 1px solid #8a5cd9;
+  background-color: #8a5cd9;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 52%;
+  right: -26%;
+}
+#section .container .right .orange {
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 52%;
+  right: -60%;
+}
+
+#why {
+  background-color: #8a5cd9;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#why .container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+}
+#why .container h2 {
+  font-size: 4.8rem;
+  font-family: "Raleway";
+  color: white;
+  font-weight: 800;
+}
+#why .container p {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+#why .container .check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#why .container .check .choose {
+  width: 22rem;
+  height: 20rem;
+  border: 3px solid white;
+  border-radius: 3rem;
+  padding: 2rem 1rem;
+}
+#why .container .check .choose h3, #why .container .check .choose h5 {
+  color: white;
+  text-align: center;
+}
+#why .container .check .choose h3 {
+  font-size: 6rem;
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+#why .container .check .choose h5 {
+  font-size: 2rem;
+  font-family: "Raleway";
+}
+
+#whyUs {
+  background-color: white;
+  width: 100%;
+  height: 87.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#whyUs .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#whyUs .cards .card {
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: 455px;
+  height: 318.6px;
+}
+
+.why-us-section {
+  width: 100%;
+  height: 87.2rem;
+}
+.why-us-section h2 {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: "Raleway";
+}
+.why-us-section .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .why-us-section .container {
+    grid-template-columns: 1fr;
+  }
+}
+.why-us-section .card {
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 1.5rem;
+  width: 46rem;
+  height: 31.8rem;
+}
+.why-us-section .card .icon {
+  width: 95px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.why-us-section .card .icon img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.why-us-section .card .icon.bg-violet {
+  background-color: #8e44ad;
+}
+.why-us-section .card .icon.bg-yellow {
+  background-color: #f7d449;
+}
+.why-us-section .card .icon.bg-orange {
+  background-color: #f59a4a;
+}
+.why-us-section .card .icon.bg-blue {
+  background-color: #0cb7af;
+}
+.why-us-section .card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Raleway";
+  margin-bottom: 0.5rem;
+}
+.why-us-section .card p {
+  font-size: 1.8rem;
+  color: #2d2c2c;
+  font-family: "Open Sans";
+  line-height: 1.5;
+}
+
+.contact-form-section {
+  background-color: #f3ebff;
+  padding: 3rem;
+  position: relative;
+  text-align: center;
+}
+.contact-form-section h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.contact-form-section .contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.contact-form-section .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.contact-form-section .contact-form .form-group label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Open Sans";
+}
+.contact-form-section .contact-form .form-group input,
+.contact-form-section .contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  outline: none;
+}
+.contact-form-section .contact-form .form-group input:focus,
+.contact-form-section .contact-form .form-group textarea:focus {
+  border-color: #9b59b6;
+}
+.contact-form-section .contact-form .form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+.contact-form-section .contact-form .checkbox-group {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.contact-form-section .contact-form .checkbox-group input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+.contact-form-section .contact-form .checkbox-group a {
+  color: #9b59b6;
+  text-decoration: underline;
+}
+.contact-form-section .contact-form button {
+  width: 100%;
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form-section .contact-form button:hover {
+  background-color: #7f3bb6;
+}
+.contact-form-section .circle {
+  position: absolute;
+  border-radius: 50%;
+}
+.contact-form-section .circle.circle-orange {
+  width: 120px;
+  height: 120px;
+  background-color: #e67e22;
+  top: 10%;
+  left: 60px;
+}
+.contact-form-section .circle.circle-purple {
+  width: 120px;
+  height: 120px;
+  background-color: #9b59b6;
+  bottom: 10%;
+  right: 60px;
+}
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 2rem;
+  }
+  .contact-form-section h2 {
+    font-size: 2.5rem;
+  }
+  .contact-form-section .contact-form {
+    padding: 1.5rem;
+  }
+  .contact-form-section .circle.circle-orange {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: -40px;
+  }
+  .contact-form-section .circle.circle-purple {
+    width: 80px;
+    height: 80px;
+    bottom: 5%;
+    right: -40px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+  .contact-form-section h2 {
+    font-size: 2rem;
+  }
+  .contact-form-section .contact-form {
+    padding: 1rem;
+  }
+  .contact-form-section .circle.circle-orange {
+    width: 60px;
+    height: 60px;
+    top: 0%;
+    left: -20px;
+  }
+  .contact-form-section .circle.circle-purple {
+    width: 60px;
+    height: 60px;
+    bottom: 0%;
+    right: -20px;
+  }
+  .contact-form-section .checkbox-group {
+    font-size: 0.8rem;
+  }
+  .contact-form-section button {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  background-color: #333333;
+  width: 100%;
+  height: 22rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+.footer .footer-top p {
+  font-size: 1.4rem;
+  font-family: "Open Sans";
+}
+.footer .footer-bottom a, .footer .footer-bottom span {
+  font-size: 1.3rem;
+  font-family: "Open Sans";
+}
+.footer .footer-bottom a {
+  color: #cdb9f0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer .footer-bottom a:hover {
+  text-decoration: none;
+  color: #848080;
+}
